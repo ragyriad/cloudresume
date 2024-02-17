@@ -22,3 +22,8 @@ variable "cloud_resume_s3_name_secret" {
   type = string
   sensitive = true
 }
+
+variable "cloud_resume_region" {
+  type = string
+  sensitive = true
+}
