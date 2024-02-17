@@ -16,8 +16,9 @@ resource "aws_s3_bucket_acl" "terraform_state_acl" {
 }
 
 resource "aws_dynamodb_table" "statelock" {
-    name = "state-lock-resume"
-    billing_mode = "PAY_PER_REQUEST"
+    name = "state-lock"
+    read_capacity = 20
+    write_capacity = 20
     hash_key= "LockID"
 
     attribute {
