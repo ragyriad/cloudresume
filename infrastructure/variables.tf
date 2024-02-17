@@ -18,12 +18,17 @@ variable "github_repo" {
   sensitive = true
 }
 
-variable "cloud_resume_s3_name_secret" {
+variable "gh_s3_bucket_secret_title" {
   type = string
   sensitive = true
 }
 
-variable "cloud_resume_region" {
+variable "gh_aws_region_secret" {
+  type = string
+  sensitive = true
+}
+
+variable "gh_aws_region_secret_title" {
   type = string
   sensitive = true
 }

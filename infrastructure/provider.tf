@@ -13,14 +13,14 @@ terraform {
     bucket = "ragy-terraform-state-cloud-resume"
     dynamodb_table = "state-lock"
     key = "global/mystatefile/terraform_tfstate"
-    region = var.cloud_resume_region
+    region = "us-east-1"
     encrypt = true
   }
 }
 
 # Configure the AWS Provider
 provider "aws" {
-  region = var.cloud_resume_region
+  region = var.gh_aws_region_secret
   profile = "default"
 }
 
