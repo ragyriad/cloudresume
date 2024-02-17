@@ -97,12 +97,6 @@ resource "aws_iam_role" "s3_terraform_state_role" {
 EOF
 }
 
-# resource "aws_iam_role_policy_attachment" "github_role_policy_attach" {
-#   role = aws_iam_role.s3_terraform_state_role.name
-#   policy_arn = aws_iam_policy.terraform_state_policy.arn
-  
-# }
-
 resource "aws_iam_role_policy_attachment" "github-role-policy-attachment" {
   role       = "${aws_iam_role.s3_terraform_state_role.name}"
   policy_arn = "${aws_iam_policy.terraform_state_policy.arn}"

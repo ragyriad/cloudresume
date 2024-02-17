@@ -32,3 +32,13 @@ variable "gh_aws_region_secret_title" {
   type = string
   sensitive = true
 }
+
+variable "gh_aws_oidc_role_arn" {
+  type = string
+  sensitive = true
+}
+
+variable "gh_aws_oidc_role_title" {
+  type = string
+  sensitive = true
+}
