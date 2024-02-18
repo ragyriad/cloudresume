@@ -47,7 +47,7 @@ resource "aws_iam_policy" "lambda_assum_role_policy_cloud_resume" {
           "Action" : [
             "dynamodb:UpdateItem","dynamodb:GetItem"
           ],
-          "Resource" : "arn:aws:dynamodb:*:*:table/cloud_resume"
+          "Resource" : var.dynamodb_arn
         },
       ]
     })

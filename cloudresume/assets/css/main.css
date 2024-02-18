@@ -8,9 +8,21 @@
 }
 
 .sectionTitle {
+	text-align: left;
+	margin-bottom: 20pt;
+}
+
+.certfTitle {
+	text-align: left;
+	margin: 20pt 0;
+	color:#2c3857e0
+}
+
+.aboutTitle {
 	text-align: center;
 	margin-bottom: 20pt;
 }
+
 
 .postionDate {
 	padding-left: 15pt;

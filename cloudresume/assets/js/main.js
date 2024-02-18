@@ -9,7 +9,7 @@
     $body = $("body"),
     $sidebar = $("#sidebar"),
     viewsLambdaUrl =
-      "https://us-east-1.console.aws.amazon.com/lambda/home?region=us-east-1#/functions/incrementResumeViews?tab=code";
+      "https://snsllsbvgnbsyumzeisetau5ai0opiop.lambda-url.us-east-1.on.aws/";
   // Breakpoints.
   breakpoints({
     xlarge: ["1281px", "1680px"],
@@ -21,6 +21,7 @@
 
   // views Fetch call
   let viewsElement = document.getElementById("views");
+
   async function updateCounter() {
     let response = await fetch(viewsLambdaUrl);
     let data = await response.json();

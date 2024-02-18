@@ -42,3 +42,8 @@ variable "gh_aws_oidc_role_title" {
   type = string
   sensitive = true
 }
+
+variable "dynamodb_arn" {
+  type = string
+  sensitive = true
+}
