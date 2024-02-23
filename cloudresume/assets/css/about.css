@@ -25,7 +25,7 @@
   .about .content ul i {
     font-size: 20px;
     margin-right: 10px;
-    color: var(--scheme-color-main);
+    color: var(--color-scheme-main);
     line-height: 0;
   }
   

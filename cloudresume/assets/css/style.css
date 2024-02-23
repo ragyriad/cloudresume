@@ -1,17 +1,20 @@
 @import url(services.css);
 @import url(svg.css);
-@import url(font.css);
+@import url(vars.css);
 @import url(hero.css);
 @import url(about.css);
+@import url(education.css);
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-/* body {
-  color: #272829;
-} */
+body {
+  font-family: var(--bs-body-font-family);
+  font-size: 18px;
+}
 
 a {
-  color: var(--scheme-color-main);
+  color: var(--color-scheme-main);
   text-decoration: none;
 }
 
@@ -26,9 +29,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: Muli, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
+.location {
+  color: var(--color-scheme-main)
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -39,7 +45,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: var(--scheme-color-main);
+  background: var(--color-scheme-main);
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -81,7 +87,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid var(--scheme-color-main);
+  border: 6px solid var(--color-scheme-main);
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
@@ -207,7 +213,7 @@ h6 {
 .nav-menu .active:focus,
 .nav-menu li:hover>a {
   color: #fff;
-  background: var(--scheme-color-main);
+  background: var(--color-scheme-main);
 }
 
 .nav-menu a:hover span,
@@ -261,7 +267,7 @@ h6 {
 
 .mobile-nav-active .mobile-nav-toggle {
   color: #fff;
-  background-color: var(--scheme-color-main);
+  background-color: var(--color-scheme-main);
 }
 
 /*--------------------------------------------------------------
@@ -314,56 +320,13 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: var(--scheme-color-main);
+  background: var(--color-scheme-main);
   bottom: 0;
   left: calc(50% - 20px);
 }
 
 .section-title p {
   margin-bottom: 0;
-}
-
-
-/*--------------------------------------------------------------
-# Facts
---------------------------------------------------------------*/
-.facts .count-box {
-  padding: 30px 30px 25px 30px;
-  margin-top: 30px;
-  width: 100%;
-  position: relative;
-  text-align: center;
-  background: #fff;
-}
-
-.facts .count-box i {
-  position: absolute;
-  top: -25px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 24px;
-  background: var(--scheme-color-main);
-  color: #fff;
-  border-radius: 50px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 48px;
-  height: 48px;
-}
-
-.facts .count-box span {
-  font-size: 36px;
-  display: block;
-  font-weight: 600;
-  color: #011426;
-}
-
-.facts .count-box p {
-  padding: 0;
-  margin: 0;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
 }
 
 /*--------------------------------------------------------------
@@ -399,7 +362,7 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: var(--scheme-color-main);
+  background-color: var(--color-scheme-main);
 }
 
 /*--------------------------------------------------------------
@@ -410,49 +373,14 @@ section {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: var(bs-pink);
+  color: var(--color-scheme-main);
 }
 
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid var(--scheme-color-main);
+  border-left: 2px solid var(--color-scheme-main);
   position: relative;
-}
-
-.certf-title {
-  padding: 10px 0;
-  margin: 0 10px;
-}
-
-
-.date-badge {
-  font-size: 16px;
-  background: var(--resume-date);
-  padding: 5px 15px;
-  font-weight: 600;
-  width: auto;
-  margin:   0 0 10px 0;
-}
-
-.certf-title h4 {
-  line-height: 35px;
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: var(--scheme-color-main);
-  width: auto;
-  text-align: right;
-  
-}
-
-.resume .resume-item h5 {
-  font-size: 16px;
-  background: var(--resume-date);
-  padding: 5px 15px;
-  display: inline-block;
-  font-weight: 600;
-  margin-bottom: 10px;
 }
 
 .resume .resume-item ul {
@@ -476,232 +404,8 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid var(--scheme-color-main);
+  border: 2px solid var(--color-scheme-main);
 }
-
-/*--------------------------------------------------------------
-# Portfolio
---------------------------------------------------------------*/
-.portfolio .portfolio-item {
-  margin-bottom: 30px;
-}
-
-.portfolio #portfolio-flters {
-  padding: 0;
-  margin: 0 auto 25px auto;
-  list-style: none;
-  text-align: center;
-  background: #fff;
-  border-radius: 50px;
-  padding: 2px 15px;
-}
-
-.portfolio #portfolio-flters li {
-  cursor: pointer;
-  display: inline-block;
-  padding: 10px 15px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1;
-  text-transform: uppercase;
-  color: #272829;
-  margin-bottom: 5px;
-  transition: all 0.3s ease-in-out;
-}
-
-.portfolio #portfolio-flters li:hover,
-.portfolio #portfolio-flters li.filter-active {
-  color: var(--scheme-color-main);
-}
-
-.portfolio #portfolio-flters li:last-child {
-  margin-right: 0;
-}
-
-.portfolio .portfolio-wrap {
-  transition: 0.3s;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  background: rgba(69, 80, 91, 0.8);
-}
-
-.portfolio .portfolio-wrap::before {
-  content: "";
-  background: rgba(255, 255, 255, 0.7);
-  position: absolute;
-  left: 30px;
-  right: 30px;
-  top: 30px;
-  bottom: 30px;
-  transition: all ease-in-out 0.3s;
-  z-index: 2;
-  opacity: 0;
-}
-
-.portfolio .portfolio-wrap .portfolio-info {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  text-align: center;
-  z-index: 3;
-  transition: all ease-in-out 0.3s;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.portfolio .portfolio-wrap .portfolio-info::before {
-  display: block;
-  content: "";
-  width: 48px;
-  height: 48px;
-  position: absolute;
-  top: 35px;
-  left: 35px;
-  border-top: 3px solid #d7dce1;
-  border-left: 3px solid #d7dce1;
-  transition: all 0.5s ease 0s;
-  z-index: 9994;
-}
-
-.portfolio .portfolio-wrap .portfolio-info::after {
-  display: block;
-  content: "";
-  width: 48px;
-  height: 48px;
-  position: absolute;
-  bottom: 35px;
-  right: 35px;
-  border-bottom: 3px solid #d7dce1;
-  border-right: 3px solid #d7dce1;
-  transition: all 0.5s ease 0s;
-  z-index: 9994;
-}
-
-.portfolio .portfolio-wrap .portfolio-info h4 {
-  font-size: 20px;
-  color: var(--font-color);
-  font-weight: 600;
-}
-
-.portfolio .portfolio-wrap .portfolio-info p {
-  color: var(--font-color);
-  font-size: 14px;
-  text-transform: uppercase;
-  padding: 0;
-  margin: 0;
-}
-
-.portfolio .portfolio-wrap .portfolio-links {
-  text-align: center;
-  z-index: 4;
-}
-
-.portfolio .portfolio-wrap .portfolio-links a {
-  color: var(--font-color);
-  margin: 0 2px;
-  font-size: 28px;
-  display: inline-block;
-  transition: 0.3s;
-}
-
-.portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #148af9;
-}
-
-.portfolio .portfolio-wrap:hover::before {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 1;
-}
-
-.portfolio .portfolio-wrap:hover .portfolio-info {
-  opacity: 1;
-}
-
-.portfolio .portfolio-wrap:hover .portfolio-info::before {
-  top: 15px;
-  left: 15px;
-}
-
-.portfolio .portfolio-wrap:hover .portfolio-info::after {
-  bottom: 15px;
-  right: 15px;
-}
-
-/*--------------------------------------------------------------
-# Portfolio Details
---------------------------------------------------------------*/
-.portfolio-details {
-  padding-top: 40px;
-}
-
-.portfolio-details .portfolio-details-slider img {
-  width: 100%;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid var(--scheme-color-main);
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--scheme-color-main);
-}
-
-.portfolio-details .portfolio-info {
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(69, 80, 91, 0.08);
-}
-
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
-}
-
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.portfolio-details .portfolio-info ul li+li {
-  margin-top: 10px;
-}
-
-.portfolio-details .portfolio-description {
-  padding-top: 30px;
-}
-
-.portfolio-details .portfolio-description h2 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.portfolio-details .portfolio-description p {
-  padding: 0;
-}
-
-
 
 /*--------------------------------------------------------------
 # Testimonials
@@ -773,11 +477,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid var(--scheme-color-main);
+  border: 1px solid var(--color-scheme-main);
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--scheme-color-main);
+  background-color: var(--color-scheme-main);
 }
 
 @media (min-width: 992px) {
@@ -796,7 +500,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: var(--scheme-color-main);
+  color: var(--color-scheme-main);
   float: left;
   width: 44px;
   height: 44px;
@@ -831,7 +535,7 @@ section {
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: var(--scheme-color-main);
+  background: var(--color-scheme-main);
   color: #fff;
 }
 
@@ -902,7 +606,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: var(--scheme-color-main);
+  background: var(--color-scheme-main);
   border: 0;
   padding: 10px 35px;
   color: #fff;
@@ -928,7 +632,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #f7f8f9;
+  background: var(--color-scheme-alt);
   color: var(--font-color);
   font-size: 14px;
   text-align: center;
@@ -958,7 +662,7 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: var(--scheme-color-main);
+  background: var(--color-scheme-main);
   color: #fff;
   line-height: 1;
   padding: 8px 0;

@@ -3,10 +3,14 @@
 --------------------------------------------------------------*/
 
 .user-img img {
-    height: 140px;
-    width: 140px;
-    border-radius: 50%;
-    margin-bottom: 10px;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.user-img {
+  margin: 20px 0;
 }
 
 
@@ -32,6 +36,7 @@
     height: 100vh;
     background-size: cover;
     position: relative;
+    text-align: center;
   }
   
   @media (min-width: 992px) {
@@ -88,9 +93,6 @@
   }
   
   @media (max-width: 992px) {
-    #hero {
-      text-align: center;
-    }
   
     #hero h1 {
       font-size: 32px;
@@ -104,6 +106,6 @@
     }
 
     #hero .social-links a {
-        font-size: 35px;
+        font-size: 30px;
       }
   }

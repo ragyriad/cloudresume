@@ -1,0 +1,31 @@
+.certf-title {
+    padding: 10px 0;
+    margin: 10px 0;
+  }
+  
+  
+  .date-badge {
+    font-size: 16px;
+    background: var(--resume-date);
+    padding: 5px 15px;
+    font-weight: 600;
+    width: auto;
+    display: inline-block;
+    margin:   0 0 10px 0;
+  }
+  
+  .certf-title h4 {
+    line-height: 35px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--color-scheme-main);
+    width: auto;
+    text-align: right;
+  }
+
+  .certf-header {
+    margin-top: 20px;
+  }
+
+  

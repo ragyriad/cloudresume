@@ -1,6 +1,7 @@
 :root {
-    --scheme-color-main: #0563bb;
+    --color-scheme-main: #0563bb;
     --font-color: #45505b;
+    --color-scheme-alt: #f7f8f9;
     --resume-date: #e4edf9;
     --link-hover-color: #067ded;;
     --bs-purple: #6f42c1;
