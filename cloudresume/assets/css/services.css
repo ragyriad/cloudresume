@@ -1,0 +1,139 @@
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+
+.about-icon {
+  font-size: 20px;
+}
+
+.tech-title {
+  text-align: center;
+  font-weight: 700;
+  margin: 10px 0 30px 0;
+  font-size: 24px;
+  color: var(--font-color)
+}
+
+.tech-row {
+  padding: 10px 0
+}
+
+.skills-title {
+  margin: 20px 0;
+  color:var(--font-color)
+}
+
+.tech-container {
+  margin-top: 30px;
+}
+
+.service-container {
+  margin: 10px 0px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  min-height: 230px;
+}
+
+.services .icon-box {
+  text-align: center;
+  padding: 40px 20px;
+  transition: all ease-in-out 0.3s;
+  background: #fff;
+}
+
+.services .icon-box .icon {
+  margin: 0 auto;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  border-radius: 50%;
+  background-color: var(--scheme-color-main);
+  color: white;
+  align-items: center;
+  justify-content: center;
+  transition: ease-in-out 0.3s;
+  position: relative;
+}
+
+.services .icon-box .icon i {
+  font-size: 36px;
+  transition: 0.5s;
+  position: relative;
+}
+
+.services .icon-box .icon svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+
+.services .icon-box h4 a {
+  color: #45505b;
+  transition: ease-in-out 0.3s;
+}
+
+.services .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+
+.services .iconbox-blue i {
+  color: #47aeff;
+}
+
+
+/* .services .iconbox-blue:hover .icon path {
+  fill: #47aeff;
+}
+
+.services .iconbox-orange i {
+  color: #ffa76e;
+}
+
+
+
+.services .iconbox-orange:hover .icon path {
+  fill: #ffa76e;
+}
+
+.services .iconbox-pink i {
+  color: #e80368;
+}
+
+
+
+.services .iconbox-pink:hover .icon path {
+  fill: #e80368;
+}
+
+.services .iconbox-yellow i {
+  color: #ffbb2c;
+}
+
+
+
+.services .iconbox-yellow:hover .icon path {
+  fill: #ffbb2c;
+}
+
+.services .iconbox-red i {
+  color: #ff5828;
+}
+
+
+.services .iconbox-red:hover .icon path {
+  fill: #ff5828;
+}
+
+.services .iconbox-teal i {
+  color: #11dbcf;
+}
+
+
+
+.services .iconbox-teal:hover .icon path {
+  fill: #11dbcf;
+} */

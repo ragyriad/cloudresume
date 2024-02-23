@@ -1,0 +1,125 @@
+
+[class*='svgicon'] {
+    /* display: inline-block;
+    margin-bottom: 10px;
+    width: 1em;
+    height: 1em;
+    font-size: 35px;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%; */
+    margin: 0 5px;
+    font-size: 40px;
+    width: 1em;
+    height: 1em;
+  }
+.svgicon-terraform {
+        background-image: url("../svg/terraform_2.svg");
+}
+
+.svgicon-meteor {
+    background-image: url("../svg/meteor.svg");
+}
+
+.svgicon-node {
+    background-image: url("../svg/node-js.svg");
+}
+
+.svgicon-git {
+    background-image: url("../svg/git.svg");
+}
+
+.svgicon-npm {
+    background-image: url("../svg/npm.svg");
+}
+
+.svgicon-github {
+    background-image: url("../svg/github.svg");
+}
+
+.svgicon-aws {
+    background-image: url("../svg/aws.svg");
+}
+
+.svgicon-fontawesome {
+    background-image: url("../svg/font-awesome.svg");
+}
+
+.svgicon-django {
+    background-image: url("../svg/django_2.svg");
+}
+
+.svgicon-react {
+    background-image: url("../svg/react.svg");
+}
+
+.svgicon-jest {
+    background-image: url("../svg/jest.svg");
+  }
+
+  .svgicon-jquery {
+    background-image: url("../svg/jquery.svg");
+  }
+
+  .icon-mysql-color {
+    background-image: url("../svg/mysql_blue.svg");
+  }
+
+  .svgicon-mysql{
+    background-image: url("../svg/mysql.svg");
+  }
+
+  .svgicon-python{
+    background-image: url("../svg/python-color.svg");
+  }
+
+  .svgicon-javascript{
+    background-image: url("../svg/javascript.svg");
+  }
+
+  .svgicon-postgresql {
+    background-image: url("../svg/postgresql.svg");
+  }
+
+  .svgicon-postgresql-color {
+    background-image: url("../svg/postgresql-color.svg");
+  }
+
+  .svgicon-mongodb {
+    background-image: url("../svg/mongodb-color.svg");
+  }
+
+  .svgicon-bootstrap {
+    background-image: url("../svg/bootstrap.svg");
+  }
+
+.svgicon-jest {
+    background-image: url("../svg/jest.svg");
+  }
+
+.svgicon-adobe {
+    background-image: url("../svg/adobe.svg");
+  }
+
+  .svgicon-jquery {
+    background-image: url("../svg/jquery.svg");
+  }
+
+  .svgicon-redux {
+    background-image: url("../svg/redux.svg");
+  }
+
+  .svgicon-mui {
+    background-image: url("../svg/mui.svg");
+  }
+
+  .svgicon-postgresql {
+    background-image: url("../svg/postgresql.svg");
+  }
+
+  .svgicon-postgresql-light {
+    background-image: url("../svg/postgresql_blue.svg");
+  }
