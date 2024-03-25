@@ -3,10 +3,13 @@
 <br />
 
 <!-- TABLE OF CONTENTS -->
-<details>
+<!-- <details>
   <summary>Table of Contents</summary>
   <ol>
   <li><a href="#description">Description</a></li>
+    <li>
+      <a href="#how-it-works">How It Works</a></li>
+    </li>
     <li>
       <a href="#built-with">Built With</a></li>
     </li>
@@ -14,13 +17,13 @@
       <a href="#contact">Contact</a></li>
     </li>
   </ol>
-</details>
+</details> -->
 
 ## Description
 
 This project is my static web resume. I built it by heavily customized template using css, jQuery, Bootstrap. It is a paralax website using a collapsable menu and anchor resume sections.
 
-## How it works
+## How It Works
 
 It is hosted on AWS Cloudfront and an S3 bucket in a private ACL to prevent public access. The view counter is a Lambda function that retrieves value from AWS DynamoDB table
 
