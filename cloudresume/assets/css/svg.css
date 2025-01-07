@@ -14,6 +14,34 @@
     background-image: url("../svg/meteor.svg");
 }
 
+.svgicon-docker {
+  background-image: url("../svg//docker.svg");
+}
+
+.svgicon-eslint {
+  background-image: url("../svg//eslint.svg");
+}
+
+.svgicon-fargate {
+  background-image: url("../svg//fargate.svg");
+}
+
+.svgicon-prettier {
+  background-image: url("../svg//prettier.svg");
+}
+
+.svgicon-linux-solid {
+  background-image: url("../svg//linux-solid.svg");
+}
+
+.svgicon-ubuntu-solid {
+  background-image: url("../svg//ubuntu-solid.svg");
+}
+
+.svgicon-tailwind {
+  background-image: url("../svg//tailwind-css.svg");
+}
+
 .svgicon-node {
     background-image: url("../svg/node-js.svg");
 }

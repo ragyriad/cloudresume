@@ -19,6 +19,44 @@ async function updateCounter() {
 
 updateCounter();
 
+function generateIconBlocks(icons) {
+  const container = document.createElement("div");
+  container.className = "service-container col-lg-4 col-md-6";
+  container.setAttribute("data-aos", "zoom-in");
+  container.setAttribute("data-aos-delay", "100");
+
+  const iconBox = document.createElement("div");
+  iconBox.className = "icon-box iconbox-yellow";
+
+  let currentRow;
+  icons.forEach((icon, index) => {
+    if (index % 3 === 0) {
+      currentRow = document.createElement("div");
+      currentRow.className = "tech-row d-flex justify-content-around";
+      iconBox.appendChild(currentRow);
+    }
+
+    const column = document.createElement("div");
+    column.className =
+      "col-lg-3 col-md-3 d-flex flex-column align-items-center";
+
+    const iconElem = document.createElement("i");
+    iconElem.className = icon.iconClass;
+
+    const textElem = document.createElement("div");
+    textElem.textContent = icon.text;
+
+    column.appendChild(iconElem);
+    column.appendChild(textElem);
+    currentRow.appendChild(column);
+  });
+
+  container.appendChild(iconBox);
+  document.body.appendChild(container); // Or append it to a specific parent element
+
+  return container;
+}
+
 (function () {
   "use strict";
 
