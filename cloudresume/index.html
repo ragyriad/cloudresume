@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"></script>
   <title>Ragy Riad - Resume</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
@@ -30,8 +30,12 @@
   <!-- Google fonts-->
   <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+  <script type="module" src="./assets/js/dataFunctions.js"></script>
+  <script type="module" defer>
+    import { professionalExperience } from './dataFunctions.js';
 
-
+    window.professionalExperience = professionalExperience;
+</script>
 </head>
 
 <body>
@@ -263,126 +267,25 @@
 
     <!-- ======= Work Experience Section ======= -->
     <section id="professionalexperience" class="resume">
-      <div class="container">
+      <div class="container" x-data="professionalExperience()" x-init="fetchExperienceData()">
         <div class="section-title">
           <h2>Professional Experience</h2>
         </div>
         <div class="row">
-          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
-            <div class="resume-item">
-              <h4 class="resume-title">Tech Team Lead - Orthoplex Solutions</h4>
-              <h5 class="date-badge">Jun 2024 - Current</h5>
-              <p><em class="location">Toronto / Remote </em></p>
-              <ul>
-                <li> 
-                  Designed Frontend, Backend Architecture. MySQL, Sequelize, React, Node
-                </li>
-                <li>
-                  Set coding standards documentation and implementing them
-                </li>
-                <li>
-                  Met with Shareholders to gather requirements, present solutions and follow ups
-                </li>
-                <li>
-                  Leveraging CI/CD for AWS and testing using Github Actions
-                </li>
-                <li>
-                  Created microservices – AS2 Server on AWS EC2 and managing security SG
-                </li>
-                <li>
-                  Created dev containers and serverless services using ECS and ECR
-                </li>
-                <li>
-                  Tech: React, Redux, ReactQuery, Jest, PostgreSQL, Tailwind, AWS deployment, Github Actions, MUI, React Prime
-                </li>
-              </ul>
+          <template x-for="item in experiences" :key="item.title">
+            <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+              <div class="resume-item">
+                <h4 class="resume-title" x-text="item.title"></h4>
+                <h5 class="date-badge" x-text="item.dateBadge"></h5>
+                <p><em class="location" x-text="item.location"></em></p>
+                <ul>
+                  <template x-for="responsibility in item.responsibilities" :key="responsibility">
+                    <li x-text="responsibility"></li>
+                  </template>
+                </ul>
+              </div>
             </div>
-            <div class="resume-item">
-              <h4 class="resume-title">Senior Software Consultant - Munvo</h4>
-              <h5 class="date-badge">Feb 2019 - Nov 2023</h5>
-              <p><em class="location">Montreal / Remote </em></p>
-              <ul>
-                <li>
-                  Participated in Business Intelligence development and Analysis with tasks like: requirement gathering, Solution Analysis and BRD documentation
-                </li>
-                <li>
-                  Provided technical solutions, workflow design, troubleshooting and workflow performance optimization in Adobe Campaign and Adobe Experience Manager
-                </li>
-                <li>
-                  Built custom workflows to aggregate complex data for better market targeting and created ETLs from CRM and other external data sources
-                </li>
-                <li>
-                  Designed and normalized large client database to improve performance, target marketing and customization within Adobe Campaign
-                </li>
-                <li>
-                  Lead Agile development of MERN (Mongo, React, Express) webapp to leverage Adobe Campaign’s API to introduce more functionality, UI, security and backup capabilities
-                </li>
-                <li>
-                  Performed instance migration and upgraded projects successfully as well 
-                </li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4 class="resume-title">Full Stack Developer - Less</h4>
-              <h5 class="date-badge">Jan 2018 - Jan 2019</h5>
-              <p><em class="location">Ottawa, ON</em></p>
-              <ul>
-                <li>
-                  Developed a unit tested event management webapp for internal use using Node, React/Redux for state management and Jest
-                </li>
-                <li>
-                  Streamlined development practices and documentation
-                </li>
-                <li>
-                  Built data consumption script in Python to automate and clean processed data
-                </li>
-              </ul>
-            </div>
-			<div class="resume-item">
-				<h4 class="resume-title">Full Stack Developer - Ackroo</h4>
-				<h5 class="date-badge">Aug 2016 - Sep 2017</h5>
-				<p><em class="location">Ottawa, ON</em></p>
-				<ul>
-				<li>
-					Built Data visualization web page that breaks down user data by filter and categories
-				</li>
-				<li>
-					Wrote ruby automation and data processing scripts
-				</li>
-				<li>
-					Implemented new front-end features and improved existing UI
-				</li>
-				<li>
-					Contributed to Grape API and swagger documentation
-				</li>
-				<li>
-					Agile/Kanban development cycle, Jira, Gitlab version control
-				</li>
-				</ul>
-			</div>
-			<div class="resume-item">
-				<h4 class="resume-title">Full Stack Developer - Inteloom</h4>
-				<h5 class="date-badge">Aug 2015 - Aug 2016</h5>
-				<p><em class="location">Ottawa, ON</em></p>
-				<ul>
-					<li>
-						Built Data visualization web page that breaks down user data by filter and categories
-					</li>
-					<li>
-						Wrote ruby automation and data processing scripts
-					</li>
-					<li>
-						Implemented new front-end features and improved existing UI
-					</li>
-					<li>
-						Contributed to Grape API and swagger documentation
-					</li>
-					<li>
-						Agile/Kanban development cycle, Jira, Gitlab version control
-					</li>
-				</ul>
-			</div>
-			</div>
+          </template>
         </div>
       </div>
     </section>
@@ -451,7 +354,6 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>

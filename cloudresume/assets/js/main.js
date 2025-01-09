@@ -1,5 +1,3 @@
-// views Fetch call
-
 viewsLambdaUrl =
   "https://snsllsbvgnbsyumzeisetau5ai0opiop.lambda-url.us-east-1.on.aws/";
 
@@ -59,7 +57,6 @@ function generateIconBlocks(icons) {
 
 (function () {
   "use strict";
-
   /**
    * Easy selector helper function
    */
