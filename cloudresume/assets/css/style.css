@@ -330,16 +330,16 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Skills
+# exptertise
 --------------------------------------------------------------*/
-.skills .progress {
+.expertise .progress {
   height: 60px;
   display: block;
   background: none;
   border-radius: 0;
 }
 
-.skills .progress .skill {
+.expertise .progress .skill {
   padding: 10px 0;
   margin: 0;
   text-transform: uppercase;
@@ -349,12 +349,12 @@ section {
   color: var(--font-color);
 }
 
-.skills .progress .skill .val {
+.exptertise .progress .skill .val {
   float: right;
   font-style: normal;
 }
 
-.skills .progress-bar-wrap {
+.exptertise .progress-bar-wrap {
   background: #f2f3f5;
 }
 

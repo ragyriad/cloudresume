@@ -30,11 +30,7 @@
   <!-- Google fonts-->
   <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-  <script type="module" src="./assets/js/dataFunctions.js"></script>
   <script type="module" defer>
-    import { professionalExperience } from './dataFunctions.js';
-
-    window.professionalExperience = professionalExperience;
 </script>
 </head>
 
@@ -50,9 +46,9 @@
       <ul>
         <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
         <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-        <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Skills</span></a></li>
+        <li><a href="#expertise" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Expertise</span></a></li>
         <li><a href="#tech" class="nav-link scrollto"><i class="bx bx-code"></i> <span>Tech</span></a></li>
-        <li><a href="#professionalexperience" class="nav-link scrollto"><i class="bx bx-briefcase"></i> <span>Experience</span></a></li>
+        <li><a href="#experience" class="nav-link scrollto"><i class="bx bx-briefcase"></i> <span>Experience</span></a></li>
         <li><a href="#education" class="nav-link scrollto"><i class="bx bx-book"></i> <span>Education</span></a></li>
         
       </ul>
@@ -70,7 +66,7 @@
 				<img src="./assets/img/user_profile.jpg">
 			</div>
 			<h1>Ragy Riad</h1>
-			<p>I'm a <span class="typed" data-typed-items="Software Developer, Consultant"></span></p>
+			<p>I'm a <span class="typed" data-typed-items="Senior Software Developer, Consultant"></span></p>
 			<div class="social-links">
 				<span><a href="https://www.linkedin.com/in/ragyriad/"><i class="bx bxl-linkedin"></i></a></span>
 				<span><a href="mailto:ragyyriad@hotmail.com"><i class="bx bx-envelope"></i></a></span>
@@ -87,25 +83,23 @@
         <div class="section-title">
           <h2>About</h2>
           <div class="row d-flex justify-content-center">
-            <div class="col-lg-8">
-              Senior Software Developer and Consultant in Adobe Campaign, with 7 years of full 
-              stack web development using Javascript, React, Python and Node. My expertise lies 
-              in Solution Consulting and Web development. As a consultant, I have extensive 
-              experience with client relationship development, client facing tasks such as 
-              requirements gathering and designing solution plans and I enjoy presenting complex 
-              concepts and solutions in simplified manner. 
+            <div class="col-lg-8 text-start">
+              Senior Full-Stack Web Developer and Consultant with 8+ years of experience. Adept at balancing technical expertise with client-facing skills, requirement gathering, 
+              solution presentation and client management. Designed and implemented client solutions and web projects from planning to deployment to AWS, and guiding teams
+              to achieve project goals using Agile.</br></br>
+              I am a fast learner, excellent listener, and effective communicator. Seeking a role that combines solution architecture and problem solving with clients and stakeholders to deliver impactful solutions
             </div>
           </div>
         </div>
-        
+      </br>  
         <div class="row d-flex justify-content-center">
-          <div class="col-md-12 col-lg-6 content d-flex justify-content-center" data-aos="fade-left">
+          <div class="col-md-8 col-lg-4 content d-flex justify-content-center" data-aos="fade-left">
             <ul>
-              <li><i class="about-icon bi bi-geo-alt"></i>Ottawa, <strong><span> Willing to relocate aboard</span></strong> </li>
+              <li><i class="about-icon bi bi-geo-alt"></i>Montreal/Cairo, <strong><span> Open to Relocation</span></strong> </li>
               <li><i class="about-icon bi bi-envelope"></i><span>ragyyriad@hotmail.com</span></li>
             </ul>
           </div>
-          <div class="col-md-12 col-lg-6 content d-flex justify-content-center" data-aos="fade-left">
+          <div class="col-md-8 col-lg-4 content d-flex justify-content-center" data-aos="fade-left">
             <ul>
               <li><i class="about-icon bi bi-translate"></i><span>English, French, Arabic, Spanish</span></li>
               <li><i class="bi bi-passport"></i><span>Canadian</span></li>
@@ -117,65 +111,17 @@
     <!-- End About Section -->
 
     <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills">
+    <section id="expertise" class="expertise">
       <div class="container" data-aos="fade-up">
         <div class="services">
           <div class="section-title">
-            <h2>Skills</h2>
+            <h2>Expertise</h2>
           </div>
-          <div class="row d-flex justify-content-around">
-            <div class="service-container col-lg-5 icon-box" data-aos="fade-up">
-              <div class="icon"><i class="bi bi-boxes"></i></div>
-              <h4 class="skills-title">Full Stack Web Development</h4>
-              <p class="description">Ive developed or improved Webapps which included the following tasks
-				<div class="row d-flex justify-content-left">
-					<div class="description-bullet"><i class="bi bi-arrow-right-circle-fill"></i>Unit tested webapps using updated web development Libraries</div>
-					<div class="description-bullet"><i class="bi bi-arrow-right-circle-fill"></i>CI/CD for rapid development and deployment</div>
-					<div class="description-bullet"><i class="bi bi-arrow-right-circle-fill"></i>Full Fledged REST API development</div>
-					<div class="description-bullet"><i class="bi bi-arrow-right-circle-fill"></i>Developed backend in both <strong>Javascript, Python</strong></div>
-				</div>
-			  </p>
-            </div>
-            <div class="service-container col-lg-5 icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bi bi-card-checklist"></i></div>
-              <h4 class="skills-title">Agile Methodologies</h4>
-              <p class="description">Always followed Agile methodologies in development as follows 
-				<div class="row">
-					<div class="description-bullet"><i class="bi bi-arrow-right-circle-fill"></i>Stands using SCRUM or KanBan iteration</div>
-					<div class="description-bullet"><i class="bi bi-arrow-right-circle-fill"></i>Task ownership, follow up and feedback using version control and pull requests</div>
-					<div class="description-bullet"><i class="bi bi-arrow-right-circle-fill"></i>Using tools like Jira, for task breakdown and tracking task lifecycle</div>
-				</div>
-					
-			  </p>
-            </div>
-            <div class="service-container col-lg-5 icon-box" data-aos="fade-up" data-aos-delay="200">
-              <div class="icon"><i class="bi bi-search"></i></div>
-              <h4 class="skills-title">CRM Solution Consulting</h4>
-              <p class="description">Extensive experience consulting for clients in many industries offering these services
-				<div class="row">
-					<div class="description-bullet"><i class="bi bi-arrow-right-circle-fill"></i>Requirements gathering and recommending solutions based on time and budget restrictions</div>
-					<div class="description-bullet"><i class="bi bi-arrow-right-circle-fill"></i>Improve data collection for user targeting</div>
-					<div class="description-bullet"><i class="bi bi-arrow-right-circle-fill"></i>Optimize marketing workflows targeting and reducing execution time</div>
-					<div class="description-bullet"><i class="bi bi-arrow-right-circle-fill"></i>Custom solutions due to product limitations </div>
-					<div class="description-bullet"><i class="bi bi-arrow-right-circle-fill"></i>Troubleshoot technical issues</div>
-				</div>
-			  </p>
-				
-			</div>
-            <div class="service-container col-lg-5 icon-box" data-aos="fade-up" data-aos-delay="300">
-              <div class="icon"><i class="bi bi-cloud-arrow-up"></i></div>
-              <h4 class="skills-title">Cloud Development</h4>
-              <p class="description">Experience provisioning cloud resources and security for exisiting projects
-				<div class="row">
-					<div class="description-bullet"><i class="bi bi-arrow-right-circle-fill"></i>Moved projects to AWS using terraform</div>
-					<div class="description-bullet"><i class="bi bi-arrow-right-circle-fill"></i>Setup Github Actions to streamline deployment</div>
-					<div class="description-bullet"><i class="bi bi-arrow-right-circle-fill"></i>Setup security and access to resources</div>
-				</div>
-			  </p>
-            </div>
-          </div>
+          <div id="expertise-rows" class="row d-flex justify-content-around"></div>
+        <div>
         </div>
-    </section><!-- End Skills Section -->
+      </div>
+    </section><!-- End Expertise Section -->
 
     <!-- ======= Tech Section ======= -->
     <section id="tech" class="services">
@@ -266,29 +212,131 @@
     </section><!-- End Tech Section -->
 
     <!-- ======= Work Experience Section ======= -->
-    <section id="professionalexperience" class="resume">
-      <div class="container" x-data="professionalExperience()" x-init="fetchExperienceData()">
+     <section id="experience" class="resume"></section>
+    <!-- <section id="experience" class="resume">
+      <div class="container">
         <div class="section-title">
           <h2>Professional Experience</h2>
         </div>
         <div class="row">
-          <template x-for="item in experiences" :key="item.title">
-            <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
-              <div class="resume-item">
-                <h4 class="resume-title" x-text="item.title"></h4>
-                <h5 class="date-badge" x-text="item.dateBadge"></h5>
-                <p><em class="location" x-text="item.location"></em></p>
-                <ul>
-                  <template x-for="responsibility in item.responsibilities" :key="responsibility">
-                    <li x-text="responsibility"></li>
-                  </template>
-                </ul>
-              </div>
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+            <div class="resume-item">
+              <h4 class="resume-title">Tech Team Lead - Orthoplex Solutions</h4>
+              <h5 class="date-badge">Jun 2024 - Current</h5>
+              <p><em class="location">Toronto / Remote </em></p>
+              <ul>
+                <li> 
+                  Designed Frontend, Backend Architecture. MySQL, Sequelize, React, Node
+                </li>
+                <li>
+                  Set coding standards documentation and implementing them
+                </li>
+                <li>
+                  Met with Shareholders to gather requirements, present solutions and follow ups
+                </li>
+                <li>
+                  Leveraging CI/CD for AWS and testing using Github Actions
+                </li>
+                <li>
+                  Created microservices – AS2 Server on AWS EC2 and managing security SG
+                </li>
+                <li>
+                  Created dev containers and serverless services using ECS and ECR
+                </li>
+                <li>
+                  Tech: React, Redux, ReactQuery, Jest, PostgreSQL, Tailwind, AWS deployment, Github Actions, MUI, React Prime
+                </li>
+              </ul>
             </div>
-          </template>
+            <div class="resume-item">
+              <h4 class="resume-title">Senior Software Consultant - Munvo</h4>
+              <h5 class="date-badge">Feb 2019 - Nov 2023</h5>
+              <p><em class="location">Montreal / Remote </em></p>
+              <ul>
+                <li>
+                  Participated in Business Intelligence development and Analysis with tasks like: requirement gathering, Solution Analysis and BRD documentation
+                </li>
+                <li>
+                  Provided technical solutions, workflow design, troubleshooting and workflow performance optimization in Adobe Campaign and Adobe Experience Manager
+                </li>
+                <li>
+                  Built custom workflows to aggregate complex data for better market targeting and created ETLs from CRM and other external data sources
+                </li>
+                <li>
+                  Designed and normalized large client database to improve performance, target marketing and customization within Adobe Campaign
+                </li>
+                <li>
+                  Lead Agile development of MERN (Mongo, React, Express) webapp to leverage Adobe Campaign’s API to introduce more functionality, UI, security and backup capabilities
+                </li>
+                <li>
+                  Performed instance migration and upgraded projects successfully as well 
+                </li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4 class="resume-title">Full Stack Developer - Less</h4>
+              <h5 class="date-badge">Jan 2018 - Jan 2019</h5>
+              <p><em class="location">Ottawa, ON</em></p>
+              <ul>
+                <li>
+                  Developed a unit tested event management webapp for internal use using Node, React/Redux for state management and Jest
+                </li>
+                <li>
+                  Streamlined development practices and documentation
+                </li>
+                <li>
+                  Built data consumption script in Python to automate and clean processed data
+                </li>
+              </ul>
+            </div>
+			<div class="resume-item">
+				<h4 class="resume-title">Full Stack Developer - Ackroo</h4>
+				<h5 class="date-badge">Aug 2016 - Sep 2017</h5>
+				<p><em class="location">Ottawa, ON</em></p>
+				<ul>
+				<li>
+					Built Data visualization web page that breaks down user data by filter and categories
+				</li>
+				<li>
+					Wrote ruby automation and data processing scripts
+				</li>
+				<li>
+					Implemented new front-end features and improved existing UI
+				</li>
+				<li>
+					Contributed to Grape API and swagger documentation
+				</li>
+				<li>
+					Agile/Kanban development cycle, Jira, Gitlab version control
+				</li>
+				</ul>
+			</div>
+			<div class="resume-item">
+				<h4 class="resume-title">Full Stack Developer - Inteloom</h4>
+				<h5 class="date-badge">Aug 2015 - Aug 2016</h5>
+				<p><em class="location">Ottawa, ON</em></p>
+				<ul>
+					<li>
+						Built Data visualization web page that breaks down user data by filter and categories
+					</li>
+					<li>
+						Wrote ruby automation and data processing scripts
+					</li>
+					<li>
+						Implemented new front-end features and improved existing UI
+					</li>
+					<li>
+						Contributed to Grape API and swagger documentation
+					</li>
+					<li>
+						Agile/Kanban development cycle, Jira, Gitlab version control
+					</li>
+				</ul>
+			</div>
+			</div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- End Work Experience Section -->
 
     <!-- ======= Education Section ======= -->
@@ -301,7 +349,7 @@
           <div class="col-lg-8" data-aos="fade-up">
             <div class="resume-item">
               <h4 class="resume-title">University of Ottawa</h4>
-			  <h5>Honors Basc of Science, Computer Science</h5>
+			        <h5>Honors Basc of Science, Computer Science</h5>
               <h5 class="date-badge">2011 - 2015</h5>
               <p><em class="location">Ottawa, ON</em></p>
               <p>Honours BSc, Specialization in Computer Science, Management and Entrepreneurship option, Computer Science</p>
@@ -356,7 +404,7 @@
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script type="module" src="assets/js/main.js"></script>
 
 </body>
 

@@ -1,4 +1,10 @@
-viewsLambdaUrl =
+import experienceData from "../../data/experience.js";
+import expertiseData from "../../data/expertise.js";
+import {
+  populateExperienceSection,
+  populateExpertiseSection,
+} from "./dataFunctions.js";
+const viewsLambdaUrl =
   "https://snsllsbvgnbsyumzeisetau5ai0opiop.lambda-url.us-east-1.on.aws/";
 
 async function updateCounter() {
@@ -323,3 +329,8 @@ function generateIconBlocks(icons) {
     });
   });
 })();
+
+window.onload = () => {
+  populateExperienceSection(experienceData);
+  populateExpertiseSection(expertiseData);
+};
