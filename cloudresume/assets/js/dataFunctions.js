@@ -18,7 +18,7 @@ export function populateExperienceSection(workExperience) {
   workExperience.forEach((job) => {
     html += `
           <div class="resume-item">
-              <h4 class="resume-title">${job.title}</h4>
+              <h4 class="resume-title">${job.title} - ${job.company}</h4>
               <h5 class="date-badge">${job.dates}</h5>
               <p><em class="location">${job.location}</em></p>
               <ul>

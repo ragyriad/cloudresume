@@ -4,7 +4,8 @@ import {
   populateExperienceSection,
   populateExpertiseSection,
 } from "./dataFunctions.js";
-const viewsLambdaUrl =
+
+var viewsLambdaUrl =
   "https://snsllsbvgnbsyumzeisetau5ai0opiop.lambda-url.us-east-1.on.aws/";
 
 async function updateCounter() {
