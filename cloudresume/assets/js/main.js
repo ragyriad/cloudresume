@@ -5,10 +5,9 @@ import {
   populateExpertiseSection,
 } from "./dataFunctions.js";
 
-var viewsLambdaUrl =
-  "https://snsllsbvgnbsyumzeisetau5ai0opiop.lambda-url.us-east-1.on.aws/";
-
 async function updateCounter() {
+  const viewsLambdaUrl =
+    "https://snsllsbvgnbsyumzeisetau5ai0opiop.lambda-url.us-east-1.on.aws/";
   let response = await fetch(viewsLambdaUrl);
   let data = await response.json();
   /* sets value for view counter */
