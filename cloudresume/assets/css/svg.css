@@ -31,15 +31,27 @@
 }
 
 .svgicon-linux-solid {
-  background-image: url("../svg//linux-solid.svg");
+  background-image: url("../svg/linux-solid.svg");
 }
 
 .svgicon-ubuntu-solid {
-  background-image: url("../svg//ubuntu-solid.svg");
+  background-image: url("../svg/ubuntu-solid.svg");
 }
 
 .svgicon-tailwind {
-  background-image: url("../svg//tailwind-css.svg");
+  background-image: url("../svg/tailwind.svg");
+}
+
+.svgicon-vite {
+  background-image: url("../svg/vite.svg");
+}
+
+.svgicon-ec2 {
+  background-image: url("../svg//ec2.svg");
+}
+
+.svgicon-ecs {
+  background-image: url("../svg/ecs.svg");
 }
 
 .svgicon-node {
