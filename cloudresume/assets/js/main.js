@@ -8,7 +8,9 @@ import {
 async function updateCounter() {
   const viewsLambdaUrl =
     "https://snsllsbvgnbsyumzeisetau5ai0opiop.lambda-url.us-east-1.on.aws/";
-  let response = await fetch(viewsLambdaUrl);
+  let response = await fetch(
+    "https://snsllsbvgnbsyumzeisetau5ai0opiop.lambda-url.us-east-1.on.aws/"
+  );
   let data = await response.json();
   /* sets value for view counter */
   new PureCounter({
