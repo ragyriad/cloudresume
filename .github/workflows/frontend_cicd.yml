@@ -14,12 +14,13 @@ jobs:
         with:
           args: --acl private --follow-symlinks --delete
         env:
-          AWS_S3_BUCKET: ${{ secrets.S3_BUCKET_2 }}
+          AWS_S3_BUCKET: ${{ secrets.S3_BUCKET }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: ${{ secrets.AWS_REGION }} # optional: defaults to us-east-1
           SOURCE_DIR: "cloudresume" # optional: defaults to entire repository
-  
+
+
   # S3PackageUpload:
   #   runs-on: ubuntu-latest
   #   steps:
@@ -34,4 +35,4 @@ jobs:
   #       # Upload a file to AWS s3
   #       - name:  Copy index.html to s3
   #         run: |
-  #           aws s3 cp ./index.html s3://${{ secrets.S3_BUCKET }}/ 
+  #           aws s3 cp ./index.html s3://${{ secrets.S3_BUCKET }}/
