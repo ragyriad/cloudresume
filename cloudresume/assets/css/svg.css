@@ -15,19 +15,23 @@
 }
 
 .svgicon-docker {
-  background-image: url("../svg//docker.svg");
+  background-image: url("../svg/docker.svg");
 }
 
 .svgicon-eslint {
   background-image: url("../svg//eslint.svg");
 }
 
+.svgicon-react-query {
+  background-image: url("../svg/react-query.svg");
+}
+
 .svgicon-fargate {
-  background-image: url("../svg//fargate.svg");
+  background-image: url("../svg/fargate.svg");
 }
 
 .svgicon-prettier {
-  background-image: url("../svg//prettier.svg");
+  background-image: url("../svg/prettier.svg");
 }
 
 .svgicon-linux-solid {
@@ -47,7 +51,7 @@
 }
 
 .svgicon-ec2 {
-  background-image: url("../svg//ec2.svg");
+  background-image: url("../svg/ec2.svg");
 }
 
 .svgicon-ecs {

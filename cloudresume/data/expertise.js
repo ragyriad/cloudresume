@@ -11,7 +11,7 @@ const expertiseData = [
       "Integrated user authentication and role-based permissions, ensuring secure access control",
       "Created and maintained unit test suites to ensure code reliability and functionality",
       "Established CI/CD pipelines using GitHub Actions to automate testing and deployment",
-      "Collaborated within agile and Scrum development cycles, using sprints and standups",
+      "Led and Collaborated within an Agile and Scrum development cycles, using sprints and standups",
       "Conducted code reviews and mentored junior developers to uphold code quality",
     ],
   },
@@ -37,8 +37,8 @@ const expertiseData = [
     bullets: [
       "Created JS scripts to circumvent platform limitation",
       "Led development of custom web solution Node/React to add security, backup and user permissions",
-      "Designed and implemented workflows for data fetching, user targeting, and campaign automation, enabling personalized and impactful customer experiences",
-      "Created dynamic email templates and integrated them into workflows, driving engagement through effective targeting and customization",
+      "Designed and implemented Martech workflows for data fetching, user targeting, and campaign automation, enabling personalized and impactful customer experiences",
+      "Developed dynamic email templates and integrated them into workflows, driving engagement through effective user targeting and customization",
     ],
   },
   {
