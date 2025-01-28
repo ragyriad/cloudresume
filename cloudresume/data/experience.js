@@ -24,6 +24,7 @@ const experienceData = [
       "Designed and implemented MarTech solutions and targeting workflows in Adobe Campaign improving performance, user targeting and customization to increase User Engagement",
       "Created ETLs to process data from CRM and SFTP data sources",
       "Designed and normalized large client databases to improve data performance",
+      "Integrated client MS Dynamics and Salesforce backend with AC database and solutions",
       "Led clients training sessions to familiarize them with my solutions and existing tools",
       "Conducted on-site visits to discuss issues and present solutions",
       "Led Agile development of MERN (Mongo, React, Express) webapp to leverage Adobe Campaign’s API to introduce more functionality, UI, security and backup capabilities",

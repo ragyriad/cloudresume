@@ -30,12 +30,13 @@ const expertiseData = [
     ],
   },
   {
-    title: "Solution Implementation",
+    title: "Solution Integration and Implementation",
     icon: "bi-card-checklist",
     delay: "100",
     bootstrapSize: "col-lg-5",
     bullets: [
       "Created JS scripts to circumvent platform limitation",
+      "Integrated client MS Dynamics and Salesforce backend with AC database and solutions",
       "Led development of custom web solution Node/React to add security, backup and user permissions",
       "Designed and implemented Martech workflows for data fetching, user targeting, and campaign automation, enabling personalized and impactful customer experiences",
       "Developed dynamic email templates and integrated them into workflows, driving engagement through effective user targeting and customization",
